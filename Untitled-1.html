@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <header class="titulo"> <h1 class="titulo">Conversor de Moeda</h1></header>
+
+    <main>
+
+      <div class="containerPrincipal">
+
+      <div id="quad">
+        <input type="number" id="valor" placeholder="0,00" />
+        <span id="barra">|</span>
+        <select name="moedas" id="lista"></select>
+      </div>
+
+      <button id="enviar">Converter</button>
+
+    </div>
+
+    <div class="container">
+      <h2 id="resp"></h2></div>
+
+      <div class="container">
+      <h3 id="porcentagem"></h3></div>
+     
+    
+    <div class="container">
+      <h3 id="variacaodia"></h3></div>
+
+      <div class="container"><h4 id="alta"></h4></div>
+
+      <div class="container"><h4 id="baixa"></h4></div>
+
+  </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
