@@ -34,8 +34,8 @@ function executar(resp) {
   if (resp[`${value}`]["pctChange"] >= 0){$("#porcentagem").html("Porcentagem de varição(dia): <div id='green'>%" + resp[`${value}`]["pctChange"] + "</div>"); }
   else{$("#porcentagem").html("Porcentagem de varição(dia): <div id='red'>%" + resp[`${value}`]["pctChange"] + "</div>");}
 
-  if(resp[`${value}`]["varBid"] >= 0){$("#variacaodia").html("Variação da moeda: <br><div id='green'>$" + resp[`${value}`]["varBid"]) + "</div>"}
-  else{"Variação da moeda: <br><div id='red'>$" + resp[`${value}`]["varBid"] + "</div>"}
+  if(resp[`${value}`]["varBid"] >= 0){$("#variacaodia").html("Variação da moeda: <br><div id='green'>$" + resp[`${value}`]["varBid"] + "</div>")}
+  else{$("#variacaodia").html("Variação da moeda: <br><div id='red'>$" + resp[`${value}`]["varBid"] + "</div>")}
 
 $("#alta").html("Máxima do dia: <br><div id='black'>" + resp[`${value}`]["high"]) + "</div>";
 $("#baixa").html("Mínimo do dia: <br><div id='black'>" + resp[`${value}`]["low"]) + "</div>"}
